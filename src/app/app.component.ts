@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'media-app';
   a: number=20;
+  b: string="Hello"
   }
