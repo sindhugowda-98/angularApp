@@ -1,3 +1,4 @@
+import { getAllLifecycleHooks } from '@angular/compiler/src/lifecycle_reflector';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'media-app';
-}
+  a: number=20;
+  }
