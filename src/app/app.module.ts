@@ -5,13 +5,19 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { LocationComponent } from './location/location.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    SidenavComponent
+    SidenavComponent,
+    LocationComponent,
+    ProfileComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,

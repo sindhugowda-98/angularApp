@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { LocationComponent } from './location/location.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EventsComponent } from './events/events.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {path: 'register', component: RegisterComponent},
-  {path: 'sidenav', component: SidenavComponent},
-  {path: "**", component: AppComponent, pathMatch:"full"}
+  {path: 'events', component: EventsComponent},
+  {path: 'location', component: LocationComponent},
+  {path: 'profile', component: ProfileComponent},
+  {path: "", redirectTo:'login', pathMatch:"full"},
+  {path:"home", component:AppComponent},
+  {path: "**",redirectTo:'/home', pathMatch:"full"}
 ];
 
 @NgModule({
