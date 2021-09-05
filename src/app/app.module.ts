@@ -8,6 +8,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { LocationComponent } from './location/location.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EventsComponent } from './events/events.component';
+import { TopnavComponent } from './topnav/topnav.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { EventsComponent } from './events/events.component';
     LocationComponent,
     ProfileComponent,
     EventsComponent,
+    TopnavComponent,
   ],
   imports: [
     BrowserModule,

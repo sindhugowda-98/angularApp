@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LocationComponent } from './location/location.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EventsComponent } from './events/events.component';
+import { TopnavComponent } from './topnav/topnav.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path: 'location', component: LocationComponent},
   {path: 'profile', component: ProfileComponent},
   {path: "", redirectTo:'login', pathMatch:"full"},
-  {path:"home", component:AppComponent},
+  {path:"home", component:TopnavComponent},
   {path: "**",redirectTo:'/home', pathMatch:"full"}
 ];
 
